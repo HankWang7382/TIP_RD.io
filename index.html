@@ -282,9 +282,9 @@
   <h1>台灣股市風格因子分析</h1>
   <p class="header-tag">Long-Short Factor Portfolio</p>
   <p class="header-universe">樣本範圍：上市及上櫃股票 · 最小市值新台幣 10 億 · 流動性篩選 · 月度報酬 · 2008/02 — 2026/03</p>
-  <p class="header-universe">市值三分位：大型股（前 33%）· 中型股（中間 33%）· 小型股（後 33%）</p>
-  <p class="header-universe">多空構造：做多頂部三分位（高因子暴露）· 做空底部三分位（低因子暴露）</p>
-  <p class="header-universe">再平衡：2月、5月、8月、11月最後交易日截止 · 3月、6月、9月、12月第 13 個交易日生效</p>
+  <p class="header-universe">市值分類：大型股（前 33%）· 中型股（中間 33%）· 小型股（後 33%）</p>
+  <p class="header-universe">多空方法：做多前30%（高因子投資組合）· 做空後30%（低因子投資組合）</p>
+  <p class="header-universe">定期審核時間：2月、5月、8月、11月最後一個交易日為資料截止日 · 3月、6月、9月、12月第 13 個交易日生效</p>
   <p class="header-universe">權重方式：市值加權</p>
 </header>
 
@@ -662,9 +662,7 @@
     <p class="eff-footnote">* 於每個再平衡日，針對個股進行橫斷面迴歸：年化個股未來報酬 = β₀ + β₁·Beta(標準化) + β₂·因子值(標準化)。 β₂ estimates the factor return — the marginal contribution of factor exposure to future returns, controlling for market beta. Future returns are annualized (1M ×12, 3M ×4, 6M ×2, 12M ×1). Outliers beyond ±3 standard deviations are winsorized before averaging. A two-sided t-test (H₀: mean β₂ = 0) is then applied. Cell shading: dark green = p &lt; 0.001, medium green = p &lt; 0.01, light green = p &lt; 0.05, grey = not significant.</p>
   </div>
 
-  <footer style="text-align:center;padding:3rem 2rem;font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--text-muted);border-top:1px solid var(--border);margin-top:3rem;">
-    研究與設計：王勝宏（Hank）· 2026年5月 · v1.0
-  </footer>
+  <p class="footnote">研究與設計：王勝宏（Hank）· 2026年5月 · v1.0</p>
 
 </div><!-- end panel-effectiveness -->
 
