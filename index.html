@@ -404,19 +404,25 @@
       
     </div>
 
-    <!-- Chart + right-side controls -->
+    <!-- Chart only -->
     <div class="cumul-main-row">
       <div class="chart-wrapper" style="flex:1;min-width:0;"><canvas id="cumulChart"></canvas></div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.4rem;">Market Cap</div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="mv-btn active-mv" data-mv="combined" onclick="switchMV('combined')">綜合</button>
           <button class="mv-btn" data-mv="large"    onclick="switchMV('large')">大型股</button>
           <button class="mv-btn" data-mv="middle"   onclick="switchMV('middle')">中型股</button>
           <button class="mv-btn" data-mv="small"    onclick="switchMV('small')">小型股</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.4rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.4rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="btn-low_risk" onclick="toggleFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="btn-momentum" onclick="toggleFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="btn-quality"  onclick="toggleFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
@@ -486,19 +492,25 @@
       <span class="player-date" id="playerDate">2008-03</span>
     </div>
 
-    <!-- Scatter + right controls -->
+    <!-- Scatter only -->
     <div class="cumul-main-row">
       <div class="scatter-wrapper" style="flex:1;min-width:0;"><canvas id="scatterChart"></canvas></div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.4rem;">市值 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="mv-btn active-mv" data-mv="combined" onclick="switchMV('combined')">綜合</button>
           <button class="mv-btn" data-mv="large"    onclick="switchMV('large')">大型股</button>
           <button class="mv-btn" data-mv="middle"   onclick="switchMV('middle')">中型股</button>
           <button class="mv-btn" data-mv="small"    onclick="switchMV('small')">小型股</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.4rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.4rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="sbtn-low_risk" onclick="toggleScatterFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="sbtn-momentum" onclick="toggleScatterFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="sbtn-quality"  onclick="toggleScatterFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
@@ -628,16 +640,22 @@
       <div style="flex:1;min-width:0;">
         <div class="eff-chart-wrapper"><canvas id="perfChart"></canvas></div>
       </div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.5rem;">市值 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="perf-mv-combined" onclick="togglePerfMV('combined')">綜合</button>
           <button class="factor-btn active" id="perf-mv-large"    onclick="togglePerfMV('large')">大型股</button>
           <button class="factor-btn active" id="perf-mv-middle"   onclick="togglePerfMV('middle')">中型股</button>
           <button class="factor-btn active" id="perf-mv-small"    onclick="togglePerfMV('small')">小型股</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="perf-f-low_risk" onclick="togglePerfFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="perf-f-momentum" onclick="togglePerfFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="perf-f-quality"  onclick="togglePerfFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
@@ -657,16 +675,22 @@
       <div style="flex:1;min-width:0;">
         <div class="eff-chart-wrapper"><canvas id="sharpeChart"></canvas></div>
       </div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.5rem;">市值 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="sharpe-mv-combined" onclick="toggleSharpeMV('combined')">綜合</button>
           <button class="factor-btn active" id="sharpe-mv-large"    onclick="toggleSharpeMV('large')">大型股</button>
           <button class="factor-btn active" id="sharpe-mv-middle"   onclick="toggleSharpeMV('middle')">中型股</button>
           <button class="factor-btn active" id="sharpe-mv-small"    onclick="toggleSharpeMV('small')">小型股</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="sharpe-f-low_risk" onclick="toggleSharpeFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="sharpe-f-momentum" onclick="toggleSharpeFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="sharpe-f-quality"  onclick="toggleSharpeFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
@@ -686,16 +710,22 @@
       <div style="flex:1;min-width:0;">
         <div class="eff-chart-wrapper" style="height:360px;"><canvas id="capmChart"></canvas></div>
       </div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.5rem;">市值 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="capm-mv-combined" onclick="toggleCAPMMV('combined')" style="gap:0.6rem;">&#9679; Combined</button>
           <button class="factor-btn active" id="capm-mv-large"    onclick="toggleCAPMMV('large')"    style="gap:0.6rem;">&#9632; Large MV</button>
           <button class="factor-btn active" id="capm-mv-middle"   onclick="toggleCAPMMV('middle')"   style="gap:0.6rem;">&#9650; Middle MV</button>
           <button class="factor-btn active" id="capm-mv-small"    onclick="toggleCAPMMV('small')"    style="gap:0.6rem;">&#9670; Small MV</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="capm-f-low_risk" onclick="toggleCAPMFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="capm-f-momentum" onclick="toggleCAPMFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="capm-f-quality"  onclick="toggleCAPMFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
@@ -715,16 +745,22 @@
       <div style="flex:1;min-width:0;">
         <div class="eff-chart-wrapper"><canvas id="stabilityChart"></canvas></div>
       </div>
-      <div class="cumul-right-controls">
+    </div>
+
+    <!-- Controls below chart -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;margin-bottom:0.5rem;">
+      <div>
         <div class="year-range-label" style="margin-bottom:0.5rem;">市值 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="stab-mv-combined" onclick="toggleStabMV('combined')">綜合</button>
           <button class="factor-btn active" id="stab-mv-large"    onclick="toggleStabMV('large')">大型股</button>
           <button class="factor-btn active" id="stab-mv-middle"   onclick="toggleStabMV('middle')">中型股</button>
           <button class="factor-btn active" id="stab-mv-small"    onclick="toggleStabMV('small')">小型股</button>
         </div>
-        <div class="year-range-label" style="margin-top:1.2rem;margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
-        <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      </div>
+      <div>
+        <div class="year-range-label" style="margin-bottom:0.5rem;">因子 <span style="font-size:0.58rem;color:var(--text-muted)">(multi-select)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
           <button class="factor-btn active" id="stab-f-low_risk" onclick="toggleStabFactor('low_risk')"><span class="dot" style="background:#4a90d9;opacity:1"></span>低風險</button>
           <button class="factor-btn active" id="stab-f-momentum" onclick="toggleStabFactor('momentum')"><span class="dot" style="background:#e07b39;opacity:1"></span>動能</button>
           <button class="factor-btn active" id="stab-f-quality"  onclick="toggleStabFactor('quality')"><span class="dot" style="background:#5a9e6f;opacity:1"></span>品質</button>
